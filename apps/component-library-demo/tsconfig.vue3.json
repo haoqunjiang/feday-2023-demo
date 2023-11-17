@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "component-library": ["../../packages/component-library/src/index.ts"],
+      "vue": ["./node_modules/vue3/dist/vue.d.mts"],
+      "vue-demi": ["./node_modules/vue-demi/lib/v3/index.d.ts"],
+      "vue-router": ["./node_modules/vue3-vue-router/dist/vue-router.d.ts"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "vueCompilerOptions": {
+    "target": 3.3
+  }
+}

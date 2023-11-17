@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist-types/vue3",
+    "paths": {
+      "vue-demi": ["./node_modules/vue-demi/lib/v3/index.d.ts"],
+      "vue": ["./node_modules/vue3/dist/vue.d.mts"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "vueCompilerOptions": {
+    "target": 3.3
+  }
+}

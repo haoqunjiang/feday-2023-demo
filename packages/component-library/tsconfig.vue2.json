@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist-types/vue2",
+    "paths": {
+      "vue-demi": ["./node_modules/vue-demi/lib/v2.7/index.d.ts"],
+      "vue": ["./node_modules/vue2/types/index.d.ts"],
+      "vue/*": ["./node_modules/vue2/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}

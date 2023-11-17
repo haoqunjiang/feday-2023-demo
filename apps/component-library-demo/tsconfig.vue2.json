@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.common.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "component-library": ["../../packages/component-library/src/index.ts"],
+      "vue": ["./node_modules/vue2/types/index.d.ts"],
+      "vue/*": ["./node_modules/vue2/*"],
+      "vue-demi": ["./node_modules/vue-demi/lib/v2.7/index.d.ts"],
+      "vue-router": ["./node_modules/vue2-vue-router/types/index.d.ts"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}
